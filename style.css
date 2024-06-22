@@ -1,0 +1,159 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#f1f1f1;
+    --fontFamily: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+::before,
+::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+.mainContainer{
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer .sectionForm{
+    width:30%;
+    height: auto;
+    background-color:#fdfdfd;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 4px 4px 25px 1px rgb(173, 173, 173);
+}
+.mainContainer .sectionForm .form{
+    width:100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap:20px;
+}
+.mainContainer .sectionForm .form .title{
+    width:100%;
+    height: auto;
+    color:#777777;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family:var(--fontFamily);
+    letter-spacing: 1px;
+    text-align: center;
+}
+.mainContainer .sectionForm .form .subtitle{
+    width:100%;
+    height: auto;
+    color:#adadad;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family:var(--fontFamily);
+    letter-spacing: 1px;
+    text-align: center;
+}
+.mainContainer .sectionForm .form .fieldset{
+    width:100%;
+    height: auto;
+}
+.mainContainer .sectionForm .form .fieldset .label{
+    width:100%;
+    height: auto;
+    position: relative;
+    transition:0.3s ease-in-out;
+}
+
+.mainContainer .sectionForm .form .fieldset .label .input{
+    width:100%;
+    text-align: left;
+    border:2px solid #f0f0f0;
+    padding: 0.7rem 1.1rem;
+    border-radius: 5px;
+    color:#929292;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-family: var(--fontFamily);
+    transition:0.3s ease-in-out;
+}
+.mainContainer .sectionForm .form .fieldset .label .input:hover{
+    width:100%;
+    border:2px solid #0099ff;
+}
+.mainContainer .sectionForm .form .fieldset .label .input:focus + .span,
+.mainContainer .sectionForm .form .fieldset .label .input:not(:placeholder-shown) + .span{
+    color:#a8a8a8;
+    background-color: white;
+    transform:translate(-10%, -130%) scale(0.7);
+}
+.mainContainer .sectionForm .form .fieldset .label .span{
+    width: max-content;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 0px 5px;
+    color:#cacaca;
+    font-size: 0.9rem;
+    z-index: 100;
+    font-family:var(--fontFamily);
+    letter-spacing: 1px;
+    position: absolute;
+    top:0;
+    left:5%;
+    pointer-events: none;
+    transform-origin: left center;
+    transition: 0.3s ease-in-out;
+}
+
+
+.mainContainer .sectionForm .form .btn {
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+.mainContainer .sectionForm .form .btn .submit,
+.mainContainer .sectionForm .form .btn .reset{
+    width:100%;
+    height: auto;
+    background-color:#0099ff;
+    border:1px solid #0099ff;
+    color:rgb(243, 243, 243);
+    font-size: 1rem;
+    font-weight: 300;
+    font-family:var(--fontFamily);
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0.9rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition:0.3s ease-in-out;
+}
+.mainContainer .sectionForm .form .btn .reset{
+    width:100%;
+    height: auto;
+    color:#9e9e9e;
+    background-color:#eeeeee;
+    border:1px solid #eeeeee;
+}
+.mainContainer .sectionForm .form .btn .reset:hover{
+    background-color:#f1f1f1;
+    border:1px solid #f1f1f1;
+}
+.mainContainer .sectionForm .form .btn .submit:hover{
+    background-color:#85caf8;
+    border:1px solid #85caf8;
+}
+
+
